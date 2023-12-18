@@ -37,16 +37,16 @@ const Footer = ({ isMobile }) => {
       <Center>
         <HeaderContainer>
           <Header>Want to get in touch?</Header>
-          <a href="mailto:joshnwarren@gmail.com">
-            <Email>joshnwarren@gmail.com</Email>
+          <a href="mailto:anis.khalef98@gmail.com">
+            <Email>anis.khalef98@gmail.com</Email>
           </a>
         </HeaderContainer>
       </Center>
       <Bottom>
         <Section>
           <Span>Anis Khalef</Span>
-          <Span>Portland, Oregon</Span>
-          <Span>Ⓒ 2022</Span>
+          <Span>Sousse, Tunisia</Span>
+          <Span>Ⓒ 2023</Span>
         </Section>
 
         <Section>
@@ -57,16 +57,11 @@ const Footer = ({ isMobile }) => {
 
         <Links>
           <Section>
-            <Link href="https://twitter.com/joshwrn">Twitter</Link>
-            <Link href="https://instagram.com/joshnwarren">Instagram</Link>
-            <Link href="https://www.linkedin.com/in/joshwrn/">LinkedIn</Link>
+            <Link href="https://www.linkedin.com/in/anis-khalef-11660a231/">LinkedIn</Link>
           </Section>
           <Section>
-            <Link href="https://github.com/joshwrn">Github</Link>
-            <Link href="https://codepen.io/joshwrn">CodePen</Link>
-            <Link href="https://www.youtube.com/channel/UCL3GruHNnB7F008lzpnF-pQ">
-              Youtube
-            </Link>
+            <Link href="https://github.com/Anis Khalefwrn">Github</Link>
+            
           </Section>
         </Links>
       </Bottom>

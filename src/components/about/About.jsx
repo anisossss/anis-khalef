@@ -25,15 +25,16 @@ const About = ({ aboutRef, isMobile }) => {
         <SectionContainer>
           <RightContainer>
             <Description>
-              Hi, I'm Josh, a passionate self-motivated web developer with 3
-              years of experience building websites. I'm proficient with React,
-              Express.js, and MongoDB. I've used my creativity and
-              problem-solving skills to design and implement websites for
-              clients.
+            Greetings, I am Anis Khalef, the visionary founder of AA Production Agency. 
+            With an unrelenting passion, I wield four years of mastery in the art of web development, 
+            crafting digital realms that transcend mere websites. 
+          
+
             </Description>
             <Skills>
               <Skill>
                 <SkillTitle>Front End</SkillTitle>
+                <SkillItem>NextJS</SkillItem>
                 <SkillItem>React</SkillItem>
                 <SkillItem>Javascript</SkillItem>
                 <SkillItem>Typescript</SkillItem>
@@ -41,16 +42,13 @@ const About = ({ aboutRef, isMobile }) => {
                 <SkillItem>Three.js</SkillItem>
               </Skill>
               <Skill>
-                <SkillTitle>Design Tools</SkillTitle>
+                <SkillTitle>Software & Design Tools</SkillTitle>
                 <SkillItem>Figma</SkillItem>
-                <SkillItem>Photoshop</SkillItem>
-                <SkillItem>Premiere</SkillItem>
-                <SkillItem>After Effects</SkillItem>
+                <SkillItem>Blender</SkillItem>
               </Skill>
               <Skill>
                 <SkillTitle>Back End</SkillTitle>
                 <SkillItem>Node.js</SkillItem>
-                <SkillItem>GraphQL</SkillItem>
                 <SkillItem>Express.js</SkillItem>
                 <SkillItem>MongoDB</SkillItem>
               </Skill>

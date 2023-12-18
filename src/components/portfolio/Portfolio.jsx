@@ -1,8 +1,8 @@
 import React from 'react';
 
-import InstagramThumbnail from '../../assets/images/instagram-thumbnail.jpg';
-import FashionThumbnail from '../../assets/images/fashion-thumbnail.jpeg';
-import StreaksThumbnail from '../../assets/images/streaks-thumb2.jpg';
+import KitchenThumbnail from '../../assets/images/screenkitchen.png';
+import ChatbotThumbnail from '../../assets/images/chatbott.png';
+import StreaksThumbnail from '../../assets/images/SS.png';
 
 import { FiArrowUpRight } from 'react-icons/fi';
 
@@ -19,32 +19,31 @@ const Portfolio = ({ portfolioRef }) => {
         <TopDivider />
         <Feed>
           <PortfolioSection
-            header="Instagram"
-            sub="Instagram Clone"
-            desc="A Full Stack clone of Instagram's features and a complete redesign of the UI. Originally built with firebase, it was rebuilt using React for the frontend, GraphQL for the backend, MongoDB for the database, and AWS S3 to store images."
-            src={InstagramThumbnail}
-            codeLink="https://github.com/joshwrn/instagram-clone"
-            demoLink="https://joshwrn.github.io/instagram-clone/#/"
-            tech="React.js, GraphQL, MongoDB, AWS"
-            date="2021"
+            header="KITCHEN SAVVY"
+            sub="AI-Powered Recipe Generator App"
+            desc="Introducing the ultimate culinary assistant, your AI-powered tool that generates delicious, customized recipes based on your personal tastes and dietary preferences.."
+            src={KitchenThumbnail}
+            codeLink="https://github.com/Anis Khalefwrn/instagram-clone"
+            tech="Next.js, Express.js, Node.js MongoDB, NGINX"
+            date="2022"
           />
           <PortfolioSection
-            header="Fashion Store"
-            sub="React Clothing Store"
-            desc="A front end clothing store built with React, React Router, and CSS. The store allows users to browse, add, and remove items from their cart."
-            src={FashionThumbnail}
-            demoLink="https://joshwrn.github.io/shopping-cart/"
-            codeLink="https://github.com/joshwrn/shopping-cart"
-            tech="React.js, React Router, CSS"
-            date="2021"
+            header="AUTO ASSISTANT"
+            sub="Social Media Content Generator"
+            desc="Based on openAI's GPT-4-preview newest model, unlock early access to the future of content planning."
+            src={ChatbotThumbnail}
+            demoLink="https://auto-assistant.vercel.app/"
+            codeLink="https://github.com/anisossss/auto-assistant"
+            tech="Next.js, NextUI, Node.js, MongoDB"
+            date="2023"
           />
           <PortfolioSection
-            header="Streaks App"
-            sub="Task Tracker"
-            desc="Built using React, TypeScript, Three.js, Framer Motion, and styled-components. This app tasks you with caring for a virtual pet that you keep alive by completing daily tasks. It's still a work in progress."
+            header="3D Partcicles Animations"
+            sub="Motion subtle swirls and explosive dynamics"
+            desc="Built using React, TypeScript, Three.js, Framer Motion, and styled-components chech this vibrant particle animation collection."
             src={StreaksThumbnail}
-            demoLink="https://joshwrn.github.io/streak-web-app/"
-            codeLink="https://github.com/joshwrn/streak-web-app"
+            demoLink="https://particles-animations.vercel.app/"
+            codeLink="https://github.com/anisossss/particles-animations"
             tech="React, TypeScript, Three.js"
             date="2022"
           />
@@ -52,7 +51,7 @@ const Portfolio = ({ portfolioRef }) => {
         <ButtonContainer
           rel="noreferrer"
           target="_blank"
-          href="https://github.com/joshwrn?tab=repositories"
+          href="https://github.com/anisossss?tab=repositories"
         >
           <Button>View More</Button>
           <ArrowIcon size={47} />
