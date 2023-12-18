@@ -23,7 +23,8 @@ const Portfolio = ({ portfolioRef }) => {
             sub="AI-Powered Recipe Generator App"
             desc="Introducing the ultimate culinary assistant, your AI-powered tool that generates delicious, customized recipes based on your personal tastes and dietary preferences.."
             src={KitchenThumbnail}
-            codeLink="https://github.com/Anis Khalefwrn/instagram-clone"
+            demoLink="https://kitchen-savvy.com/"
+            codeLink="#"
             tech="Next.js, Express.js, Node.js MongoDB, NGINX"
             date="2022"
           />
