@@ -127,7 +127,7 @@ const styles = {
   barBlur: {
     height: 3,
     width: '100%',
-    background: 'white',
+    background: 'red',
     filter: 'blur(5px)',
     transition: 'transform 1s',
     transformOrigin: 'left center',

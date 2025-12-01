@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { useMotionValue, motion } from 'framer-motion';
-import useMeasure from 'react-use-measure';
-import Header from '../reusable/Header';
-import styled from 'styled-components';
+import { useMotionValue, motion } from "framer-motion";
+import useMeasure from "react-use-measure";
+import Header from "../reusable/Header";
+import styled from "styled-components";
 
-import Divider from '../reusable/Divider';
-import LaptopContainer from '../../three/laptop/LaptopContainer';
+import Divider from "../reusable/Divider";
+import LaptopContainer from "../../three/laptop/LaptopContainer";
 
 const About = ({ aboutRef, isMobile }) => {
   const [mouseRef, bounds] = useMeasure({ scroll: true });
@@ -25,11 +25,18 @@ const About = ({ aboutRef, isMobile }) => {
         <SectionContainer>
           <RightContainer>
             <Description>
-            Greetings, I am Anis Khalef, the visionary founder of AA Production Agency. 
-            With an unrelenting passion, I wield four years of mastery in the art of web development, 
-            crafting digital realms that transcend mere websites. 
-          
-
+              Greetings, I am <strong>Anis Khalef</strong>, a passionate{" "}
+              <strong>Full Stack Web Developer</strong> and the visionary
+              founder of <strong>TuniCyberLabs</strong>. With over four years of
+              expertise in <strong>modern web development</strong>, I specialize
+              in creating high-performance, scalable web applications using
+              cutting-edge technologies. My expertise spans{" "}
+              <strong>React.js, Next.js, Node.js, MongoDB, Three.js</strong>,
+              and <strong>AI integration</strong>, enabling me to deliver
+              exceptional digital experiences that drive business growth. I am
+              dedicated to crafting innovative solutions that combine beautiful
+              user interfaces with robust backend architecture, ensuring optimal
+              performance, SEO optimization, and user engagement.
             </Description>
             <Skills>
               <Skill>
@@ -54,7 +61,7 @@ const About = ({ aboutRef, isMobile }) => {
               </Skill>
             </Skills>
           </RightContainer>
-          {isMobile === 'false' && (
+          {isMobile === "false" && (
             <ImageContainer>
               <LaptopContainer mouseX={mouseX} mouseY={mouseY} />
             </ImageContainer>

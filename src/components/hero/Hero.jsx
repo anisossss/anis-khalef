@@ -49,14 +49,9 @@ const Hero = ({ setTop }) => {
         mouseY.set((e.clientY - bounds.y - bounds.height / 2) * 1);
       }}
     >
-      <NavRef ref={topRef} />
-      <BackgroundImage src={Bg} />
-      <Gradient />
-      <HeroScene mouseX={mouseX} mouseY={mouseY} />
-
-      <Loader
+       <Loader
         containerStyles={{
-          backgroundColor: 'black',
+          backgroundColor: '#ffff',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -77,7 +72,12 @@ const Hero = ({ setTop }) => {
           minWidth: '150px',
         }}
         dataStyles={{ display: 'none' }}
-      />
+      />  <NavRef ref={topRef} />
+      <BackgroundImage src={Bg} />
+      <Gradient />
+      <HeroScene mouseX={mouseX} mouseY={mouseY} />
+
+   
     </HeroContainer>
   );
 };

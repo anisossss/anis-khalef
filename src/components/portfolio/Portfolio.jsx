@@ -48,6 +48,46 @@ const Portfolio = ({ portfolioRef }) => {
             tech="React, TypeScript, Three.js"
             date="2022"
           />
+          <PortfolioSection
+            header="E-COMMERCE PLATFORM"
+            sub="Full-Stack E-Commerce Solution"
+            desc="A comprehensive e-commerce platform with advanced features including shopping cart, payment integration, user authentication, product management, and real-time inventory tracking. Built with modern web technologies for optimal performance and user experience."
+            src={KitchenThumbnail}
+            demoLink="https://kitchen-savvy.com/"
+            codeLink="https://github.com/anisossss"
+            tech="Next.js, TypeScript, Stripe API, PostgreSQL, Redis"
+            date="2023"
+          />
+          <PortfolioSection
+            header="REAL-TIME DASHBOARD"
+            sub="Analytics & Data Visualization Platform"
+            desc="An interactive dashboard application featuring real-time data visualization, custom charts, and comprehensive analytics. Includes user management, role-based access control, and export functionality for business intelligence."
+            src={ChatbotThumbnail}
+            demoLink="https://auto-assistant.vercel.app/"
+            codeLink="https://github.com/anisossss/auto-assistant"
+            tech="React, D3.js, WebSocket, Node.js, MongoDB"
+            date="2023"
+          />
+          <PortfolioSection
+            header="MOBILE RESPONSIVE APP"
+            sub="Cross-Platform Mobile Web Application"
+            desc="A fully responsive web application optimized for mobile devices with progressive web app capabilities. Features offline functionality, push notifications, and seamless user experience across all device sizes."
+            src={StreaksThumbnail}
+            demoLink="https://particles-animations.vercel.app/"
+            codeLink="https://github.com/anisossss/particles-animations"
+            tech="React, PWA, Service Workers, Responsive Design"
+            date="2024"
+          />
+          <PortfolioSection
+            header="API INTEGRATION HUB"
+            sub="Third-Party API Management System"
+            desc="A robust API integration platform that connects multiple third-party services, handles webhooks, manages rate limiting, and provides comprehensive API documentation. Includes automated testing and monitoring capabilities."
+            src={KitchenThumbnail}
+            demoLink="https://kitchen-savvy.com/"
+            codeLink="https://github.com/anisossss"
+            tech="Express.js, REST API, GraphQL, Jest, Docker"
+            date="2024"
+          />
         </Feed>
         <ButtonContainer
           rel="noreferrer"

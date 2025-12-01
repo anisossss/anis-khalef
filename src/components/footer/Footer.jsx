@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
-import { useMotionValue, motion } from 'framer-motion';
-import useMeasure from 'react-use-measure';
+import { useMotionValue, motion } from "framer-motion";
+import useMeasure from "react-use-measure";
 
-import FooterScene from '../../three/footer/FooterScene';
+import FooterScene from "../../three/footer/FooterScene";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Link = ({ href, children }) => {
   return (
@@ -46,7 +46,7 @@ const Footer = ({ isMobile }) => {
         <Section>
           <Span>Anis Khalef</Span>
           <Span>Sousse, Tunisia</Span>
-          <Span>Ⓒ 2023</Span>
+          <Span>Ⓒ 2025</Span>
         </Section>
 
         <Section>
@@ -57,11 +57,12 @@ const Footer = ({ isMobile }) => {
 
         <Links>
           <Section>
-            <Link href="https://www.linkedin.com/in/anis-khalef-11660a231/">LinkedIn</Link>
+            <Link href="https://www.linkedin.com/in/anis-khalef-11660a231/">
+              LinkedIn
+            </Link>
           </Section>
           <Section>
             <Link href="https://github.com/Anis Khalefwrn">Github</Link>
-            
           </Section>
         </Links>
       </Bottom>
@@ -160,7 +161,7 @@ const StyledLink = styled.a`
     }
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
