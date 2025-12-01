@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import ImageLoader from '../reusable/ImageLoader';
 
@@ -16,9 +18,31 @@ const PortfolioSection = ({
   codeLink,
   demoLink,
 }) => {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <Outer>
-      <SectionContainer>
+    <Outer ref={ref}>
+      <SectionContainer
+        as={motion.div}
+        variants={containerVariants}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+      >
         <SubContainer>
           <HeaderContainer>
             <PortfolioHeader>{header}</PortfolioHeader>

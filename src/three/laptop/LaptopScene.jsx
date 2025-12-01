@@ -1,10 +1,9 @@
-import { motion } from 'framer-motion-3d';
-import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { useSmoothTransform } from '../reusable/use-smooth-transform';
+import { motion } from "framer-motion-3d";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { useSmoothTransform } from "../reusable/use-smooth-transform";
 
-import LaptopModel from './laptopModel';
-import Camera from '../reusable/MovableCamera';
+import Camera from "../reusable/MovableCamera";
 
 export const LaptopScene = ({ mouseX, mouseY }) => {
   const lightRotateX = useSmoothTransform(mouseY, spring, mouseToLightRotation);
@@ -14,7 +13,6 @@ export const LaptopScene = ({ mouseX, mouseY }) => {
     <>
       <Camera mouseX={mouseX} mouseY={mouseY} fov={70} />
       <ambientLight intensity={0.15} />
-      <LaptopModel />
       <motion.group
         center={[0, 0, 0]}
         position={[10, 10, -1]}
@@ -32,12 +30,13 @@ export const LaptopScene = ({ mouseX, mouseY }) => {
       <group
         initial={false}
         dispose={null}
-        position={[-3.5, 4, 3]}
-        scale={[20, 20, 20]}
+        position={[-3.5, 4, 3, 2]}
+        scale={[40, 40, 30, 20]}
       >
         <Sphere />
         <Cone />
         <Torus />
+        <Icosahedron />
         <Icosahedron />
       </group>
     </>

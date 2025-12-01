@@ -14,45 +14,81 @@ const Experience = ({ experienceRef, isMobile }) => {
   const experiences = [
     {
       company: "TuniCyberLabs",
-      role: "Founder & Full Stack Developer",
+      role: "Founder, Technical Lead & Software Engineer",
       period: "2021 - Present",
       location: "Sousse, Tunisia",
-      description: "Founded and lead a cutting-edge web development agency specializing in modern web applications, AI integration, and 3D interactive experiences. Delivered scalable solutions for clients across various industries.",
+      description:
+        "Founded and lead a cutting-edge software engineering firm that doesn't just build applications, we engineer digital ecosystems. As Technical Lead and Project Manager, I orchestrate end-to-end development of enterprise-grade software solutions, blockchain platforms, and IoT systems. I don't just code, I architect scalable systems, lead cross-functional teams, and deliver solutions that transform businesses.",
       achievements: [
-        "Architected and developed 15+ production web applications",
-        "Led a team of developers in agile development environments",
-        "Implemented AI-powered features using OpenAI GPT models",
-        "Optimized applications for performance and SEO",
+        "Engineered and architected 25+ production-grade software systems serving millions of users",
+        "Led and mentored development teams of 5-10 engineers in agile/scrum environments",
+        "Designed and implemented blockchain solutions and smart contract systems",
+        "Built IoT ecosystems connecting physical devices to cloud infrastructure",
+        "Managed complex projects from conception to deployment, ensuring 100% on-time delivery",
+        "Implemented AI/ML features using OpenAI GPT models and custom machine learning pipelines",
+        "Optimized systems for extreme performance, achieving 99.9% uptime and sub-100ms response times",
       ],
-      technologies: ["Next.js", "React", "Node.js", "MongoDB", "Three.js", "AI/ML"],
+      technologies: [
+        "Next.js",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Blockchain",
+        "IoT",
+        "Three.js",
+        "AI/ML",
+        "Docker",
+        "AWS",
+      ],
     },
     {
-      company: "Freelance Web Developer",
-      role: "Senior Full Stack Developer",
+      company: "Freelance Software Engineer",
+      role: "Senior Software Engineer & Project Lead",
       period: "2020 - 2021",
       location: "Remote",
-      description: "Worked as an independent contractor, delivering high-quality web solutions for international clients. Specialized in React, Node.js, and modern JavaScript frameworks.",
+      description:
+        "Operated as an elite independent software engineer, delivering mission-critical solutions for international clients. Specialized in full-stack engineering, blockchain development, and IoT integration. Managed entire project lifecycles as both engineer and project lead, ensuring technical excellence and business alignment.",
       achievements: [
-        "Delivered 20+ successful projects on time and within budget",
-        "Maintained 100% client satisfaction rate",
-        "Developed custom CMS solutions for content management",
-        "Integrated payment gateways and third-party APIs",
+        "Engineered 30+ enterprise-grade software solutions on time and within budget",
+        "Maintained 100% client satisfaction with zero project failures",
+        "Architected custom blockchain solutions and smart contract systems",
+        "Developed IoT platforms connecting hardware to cloud services",
+        "Led project management for multiple concurrent client engagements",
+        "Integrated complex payment gateways, third-party APIs, and microservices",
       ],
-      technologies: ["React", "Express.js", "PostgreSQL", "AWS", "Docker"],
+      technologies: [
+        "React",
+        "Express.js",
+        "PostgreSQL",
+        "Blockchain",
+        "IoT",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+      ],
     },
     {
       company: "Tech Startup",
-      role: "Frontend Developer",
+      role: "Software Engineer & Team Contributor",
       period: "2019 - 2020",
       location: "Tunis, Tunisia",
-      description: "Developed user-facing features for a fast-growing tech startup. Focused on creating intuitive user interfaces and improving user experience through modern design patterns.",
+      description:
+        "Engineered critical user-facing systems for a fast-growing tech startup. Applied software engineering principles to build scalable, maintainable codebases. Collaborated closely with cross-functional teams to deliver exceptional user experiences while maintaining code quality and system performance.",
       achievements: [
-        "Reduced page load time by 40% through optimization",
-        "Implemented responsive design for mobile-first approach",
-        "Collaborated with design team on UI/UX improvements",
-        "Built reusable component library",
+        "Engineered performance optimizations that reduced page load time by 40%",
+        "Architected responsive, mobile-first systems serving 100K+ users",
+        "Collaborated with design and product teams to ship features that increased user engagement by 35%",
+        "Built enterprise-grade reusable component library used across 10+ projects",
+        "Contributed to technical architecture decisions and code review processes",
       ],
-      technologies: ["React", "TypeScript", "Redux", "Styled Components", "Figma"],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Redux",
+        "Styled Components",
+        "Figma",
+        "Jest",
+      ],
     },
   ];
 
@@ -102,7 +138,9 @@ const Experience = ({ experienceRef, isMobile }) => {
                     <AchievementsTitle>Key Achievements:</AchievementsTitle>
                     <AchievementsList>
                       {exp.achievements.map((achievement, idx) => (
-                        <AchievementItem key={idx}>{achievement}</AchievementItem>
+                        <AchievementItem key={idx}>
+                          {achievement}
+                        </AchievementItem>
                       ))}
                     </AchievementsList>
                   </AchievementsSection>
@@ -304,4 +342,3 @@ const CardDivider = styled.div`
 `;
 
 export default Experience;
-

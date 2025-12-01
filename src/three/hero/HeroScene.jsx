@@ -1,15 +1,15 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from "react";
 
-import { Canvas, useThree } from '@react-three/fiber';
+import { Canvas, useThree } from "@react-three/fiber";
 
-import { Text, Float, useProgress } from '@react-three/drei';
-import { motion } from 'framer-motion-3d';
-import { MotionConfig } from 'framer-motion';
+import { Text, Float, useProgress } from "@react-three/drei";
+import { motion } from "framer-motion-3d";
+import { MotionConfig } from "framer-motion";
 
-import BalloonModel from './BalloonModel';
-import Camera from '../reusable/MovableCamera';
+import BalloonModel from "./BalloonModel";
+import Camera from "../reusable/MovableCamera";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HeroText = ({ text, position }) => {
   return (
@@ -47,14 +47,8 @@ const InnerContainer = ({ mouseX, mouseY }) => {
 
       <group position={[0, 35, 0]} scale={viewport.width / 10.5}>
         <group>
-          <HeroText
-            text="Anis Khalef"
-            position={[-37, 0, 20]}
-          />
-          <HeroText
-            text="Full Stack Web Developer."
-            position={[0, -14, 20]}
-          />
+          <HeroText text="Anis Khalef" position={[-37, 0, 20]} />
+          <HeroText text="Software Engineer" position={[0, -14, 20]} />
         </group>
         {/* left */}
         <Float speed={0.7} rotationIntensity={0.1} floatIntensity={10}>
@@ -62,7 +56,7 @@ const InnerContainer = ({ mouseX, mouseY }) => {
             scale={5.1}
             position={[-57, -10, -10]}
             rotation={[0, 0.2, -5.5]}
-            animate='visible' 
+            animate="visible"
           />
         </Float>
         {/* top */}
@@ -71,7 +65,7 @@ const InnerContainer = ({ mouseX, mouseY }) => {
             scale={7}
             position={[5, 5, -5.5]}
             rotation={[0, 0.2, -0.1]}
-            animate='visible' 
+            animate="visible"
           />
         </Float>
         {/* right */}
@@ -79,7 +73,7 @@ const InnerContainer = ({ mouseX, mouseY }) => {
           <BalloonModel
             scale={5}
             position={[60, -25, -5]}
-            rotation={[-0.1, 0.2, 5.9]}   
+            rotation={[-0.1, 0.2, 5.9]}
           />
         </Float>
         {/* bottom */}

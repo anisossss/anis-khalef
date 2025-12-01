@@ -25,22 +25,32 @@ const About = ({ aboutRef, isMobile }) => {
         <SectionContainer>
           <RightContainer>
             <Description>
-              Greetings, I am <strong>Anis Khalef</strong>, a passionate{" "}
-              <strong>Full Stack Web Developer</strong> and the visionary
-              founder of <strong>TuniCyberLabs</strong>. With over four years of
-              expertise in <strong>modern web development</strong>, I specialize
-              in creating high-performance, scalable web applications using
-              cutting-edge technologies. My expertise spans{" "}
+              I'm <strong>Anis Khalef</strong>, a{" "}
+              <strong>Software Engineer</strong> who doesn't just code, I{" "}
+              <strong>architect digital revolutions</strong>. As the founder and{" "}
+              <strong>Technical Lead</strong> of <strong>TuniCyberLabs</strong>,
+              I've spent over four years transforming complex ideas into{" "}
+              <strong>world-class software solutions</strong> that scale to
+              millions of users. I'm not just a developer, I'm an{" "}
+              <strong>engineering powerhouse</strong> specializing in{" "}
+              <strong>
+                Software Engineering, Blockchain Technology, and IoT Systems
+              </strong>
+              . My expertise extends beyond coding: I'm a{" "}
+              <strong>Project Manager</strong> and <strong>Team Lead</strong>{" "}
+              who orchestrates entire development lifecycles, from concept to
+              deployment. I engineer{" "}
+              <strong>enterprise-grade applications</strong> using{" "}
               <strong>React.js, Next.js, Node.js, MongoDB, Three.js</strong>,
-              and <strong>AI integration</strong>, enabling me to deliver
-              exceptional digital experiences that drive business growth. I am
-              dedicated to crafting innovative solutions that combine beautiful
-              user interfaces with robust backend architecture, ensuring optimal
-              performance, SEO optimization, and user engagement.
+              and cutting-edge <strong>AI/ML integration</strong>. But what sets
+              me apart? I build <strong>blockchain-powered solutions</strong>{" "}
+              and <strong>IoT ecosystems</strong> that connect the physical and
+              digital worlds. Every line of code I write is engineered for{" "}
+              <strong>maximum performance, scalability, and impact</strong>.
             </Description>
             <Skills>
               <Skill>
-                <SkillTitle>Front End</SkillTitle>
+                <SkillTitle>Front End Engineering</SkillTitle>
                 <SkillItem>NextJS</SkillItem>
                 <SkillItem>React</SkillItem>
                 <SkillItem>Javascript</SkillItem>
@@ -49,15 +59,28 @@ const About = ({ aboutRef, isMobile }) => {
                 <SkillItem>Three.js</SkillItem>
               </Skill>
               <Skill>
-                <SkillTitle>Software & Design Tools</SkillTitle>
-                <SkillItem>Figma</SkillItem>
-                <SkillItem>Blender</SkillItem>
-              </Skill>
-              <Skill>
-                <SkillTitle>Back End</SkillTitle>
+                <SkillTitle>Back End & Infrastructure</SkillTitle>
                 <SkillItem>Node.js</SkillItem>
                 <SkillItem>Express.js</SkillItem>
                 <SkillItem>MongoDB</SkillItem>
+                <SkillItem>PostgreSQL</SkillItem>
+                <SkillItem>Docker</SkillItem>
+                <SkillItem>AWS</SkillItem>
+              </Skill>
+              <Skill>
+                <SkillTitle>Blockchain & IoT</SkillTitle>
+                <SkillItem>Blockchain Development</SkillItem>
+                <SkillItem>Smart Contracts</SkillItem>
+                <SkillItem>IoT Systems</SkillItem>
+                <SkillItem>Embedded Systems</SkillItem>
+              </Skill>
+              <Skill>
+                <SkillTitle>Leadership & Tools</SkillTitle>
+                <SkillItem>Project Management</SkillItem>
+                <SkillItem>Team Leadership</SkillItem>
+                <SkillItem>Agile/Scrum</SkillItem>
+                <SkillItem>Figma</SkillItem>
+                <SkillItem>Blender</SkillItem>
               </Skill>
             </Skills>
           </RightContainer>
@@ -132,6 +155,11 @@ const Skills = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 50px;
+  grid-column-gap: 40px;
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `;
 
 const Skill = styled.div`

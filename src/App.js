@@ -5,6 +5,9 @@ import HeroMobile from "./components/hero/HeroMobile";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
+import Experience from "./components/experience/Experience";
+import Services from "./components/services/Services";
+import Stats from "./components/stats/Stats";
 
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
@@ -22,6 +25,9 @@ function App() {
   const portfolioRef = useRef(null);
   const skillsRef = useRef(null);
   const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const servicesRef = useRef(null);
+  const statsRef = useRef(null);
 
   useEffect(() => {
     if (
@@ -49,6 +55,9 @@ function App() {
           portfolioRef={portfolioRef}
           skillsRef={skillsRef}
           aboutRef={aboutRef}
+          experienceRef={experienceRef}
+          servicesRef={servicesRef}
+          statsRef={statsRef}
         />
       )}
 
@@ -60,6 +69,9 @@ function App() {
         )}
         <Portfolio portfolioRef={portfolioRef} isMobile={isMobile} />
         <About aboutRef={aboutRef} isMobile={isMobile} />
+        <Experience experienceRef={experienceRef} isMobile={isMobile} />
+        <Services servicesRef={servicesRef} isMobile={isMobile} />
+        <Stats statsRef={statsRef} isMobile={isMobile} />
         <Footer isMobile={isMobile} />
       </Feed>
     </ThemeProvider>

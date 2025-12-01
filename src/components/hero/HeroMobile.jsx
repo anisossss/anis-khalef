@@ -74,7 +74,7 @@ const Hero = ({ setTop }) => {
       />
       <HeaderContainer>
         <Header>Anis Khalef</Header>
-        <SubHeader>Full Stack Web Developer</SubHeader>
+        <SubHeader>Software Engineer | Technical Lead | Blockchain & IoT Expert</SubHeader>
       </HeaderContainer>
       <Gradient />
       <HeroSceneMobile mouseX={mouseX} mouseY={mouseY} />

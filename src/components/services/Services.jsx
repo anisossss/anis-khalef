@@ -13,40 +13,70 @@ const Services = ({ servicesRef, isMobile }) => {
 
   const services = [
     {
-      title: "Web Development",
-      description: "Custom web applications built with modern frameworks like React, Next.js, and Node.js. Scalable, performant, and SEO-optimized solutions.",
-      icon: "🌐",
-      features: ["Responsive Design", "Performance Optimization", "SEO Friendly", "Cross-Browser Compatible"],
+      title: "Software Engineering",
+      description:
+        "Enterprise-grade software engineering services. I architect and build scalable, maintainable systems that handle millions of users. Not just code, engineered solutions.",
+      features: [
+        "System Architecture",
+        "Scalable Solutions",
+        "Code Quality",
+        "Performance Engineering",
+      ],
     },
     {
-      title: "Full Stack Solutions",
-      description: "End-to-end development services from frontend to backend, including database design, API development, and cloud deployment.",
-      icon: "⚡",
-      features: ["RESTful APIs", "Database Design", "Cloud Deployment", "Microservices"],
+      title: "Blockchain Development",
+      description:
+        "Revolutionary blockchain solutions and smart contract development. Build decentralized applications, DeFi platforms, and blockchain-integrated systems that transform industries.",
+      features: [
+        "Smart Contracts",
+        "DeFi Platforms",
+        "DApps",
+        "Blockchain Integration",
+      ],
     },
     {
-      title: "3D Interactive Experiences",
-      description: "Immersive 3D web experiences using Three.js and WebGL. Interactive animations and visualizations that engage users.",
-      icon: "🎨",
-      features: ["3D Modeling", "Interactive Animations", "WebGL Rendering", "Performance Optimization"],
+      title: "IoT Systems Engineering",
+      description:
+        "Connect the physical and digital worlds. I engineer complete IoT ecosystems, from embedded systems to cloud infrastructure, creating seamless device-to-cloud solutions.",
+      features: [
+        "Embedded Systems",
+        "Device Integration",
+        "Cloud Connectivity",
+        "Real-time Data",
+      ],
     },
     {
-      title: "AI Integration",
-      description: "Integrate cutting-edge AI capabilities into your applications using OpenAI, machine learning models, and intelligent automation.",
-      icon: "🤖",
-      features: ["OpenAI Integration", "Chatbots", "Content Generation", "Automation"],
+      title: "Project Management & Leadership",
+      description:
+        "As Technical Lead and Project Manager, I orchestrate entire development lifecycles. From concept to deployment, I ensure on-time delivery and technical excellence.",
+      features: [
+        "Agile/Scrum",
+        "Team Leadership",
+        "Project Planning",
+        "Risk Management",
+      ],
     },
     {
-      title: "E-Commerce Solutions",
-      description: "Complete e-commerce platforms with payment integration, inventory management, and secure checkout processes.",
-      icon: "🛒",
-      features: ["Payment Gateways", "Inventory Management", "User Authentication", "Order Processing"],
+      title: "Full Stack Engineering",
+      description:
+        "End-to-end engineering services from frontend to backend. I build complete systems with modern frameworks, microservices architecture, and cloud-native deployment.",
+      features: [
+        "React/Next.js",
+        "Node.js Backend",
+        "Database Design",
+        "Cloud Deployment",
+      ],
     },
     {
-      title: "Consulting & Strategy",
-      description: "Technical consulting to help you make informed decisions about technology stack, architecture, and development processes.",
-      icon: "💡",
-      features: ["Technical Consulting", "Architecture Design", "Code Reviews", "Best Practices"],
+      title: "AI & Machine Learning",
+      description:
+        "Integrate cutting-edge AI capabilities into your systems. From OpenAI GPT integration to custom ML models, I engineer intelligent automation that drives business value.",
+      features: [
+        "AI Integration",
+        "ML Pipelines",
+        "Intelligent Automation",
+        "Data Analytics",
+      ],
     },
   ];
 
@@ -90,9 +120,10 @@ const Services = ({ servicesRef, isMobile }) => {
                     whileHover={{ y: -10, scale: 1.02 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <IconContainer>{service.icon}</IconContainer>
                     <ServiceTitle>{service.title}</ServiceTitle>
-                    <ServiceDescription>{service.description}</ServiceDescription>
+                    <ServiceDescription>
+                      {service.description}
+                    </ServiceDescription>
                     <FeaturesList>
                       {service.features.map((feature, idx) => (
                         <FeatureItem key={idx}>{feature}</FeatureItem>
@@ -169,15 +200,6 @@ const ServiceCard = styled(motion.div)`
   }
 `;
 
-const IconContainer = styled.div`
-  font-size: 5rem;
-  margin-bottom: 20px;
-  @media only screen and (max-width: 1050px) {
-    font-size: 4rem;
-    margin-bottom: 15px;
-  }
-`;
-
 const ServiceTitle = styled.h3`
   font-size: 2.8rem;
   font-family: ${({ theme }) => theme.main.fontFamily.bold};
@@ -217,7 +239,7 @@ const FeatureItem = styled.li`
   position: relative;
   padding-left: 20px;
   &::before {
-    content: "✓";
+    content: "-";
     position: absolute;
     left: 0;
     color: ${({ theme }) => theme.portfolio.fontColor.primary};
@@ -228,4 +250,3 @@ const FeatureItem = styled.li`
 `;
 
 export default Services;
-

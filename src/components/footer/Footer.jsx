@@ -52,7 +52,7 @@ const Footer = ({ isMobile }) => {
         <Section>
           <Bold>Built with</Bold>
           <Span>React.js, Three.js,</Span>
-          <Span>Framer Motion & 🖤</Span>
+          <Span>Framer Motion</Span>
         </Section>
 
         <Links>

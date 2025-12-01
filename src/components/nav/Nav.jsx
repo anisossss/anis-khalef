@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styled from 'styled-components';
 
-const Nav = ({ top, portfolioRef, aboutRef }) => {
+const Nav = ({ top, portfolioRef, aboutRef, experienceRef, servicesRef, statsRef }) => {
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
@@ -37,6 +37,12 @@ const Nav = ({ top, portfolioRef, aboutRef }) => {
           </NavTextLink>
           <NavTextLink onClick={() => scrollToSection(aboutRef)}>
             About
+          </NavTextLink>
+          <NavTextLink onClick={() => scrollToSection(experienceRef)}>
+            Experience
+          </NavTextLink>
+          <NavTextLink onClick={() => scrollToSection(servicesRef)}>
+            Services
           </NavTextLink>
           <NavTextLink onClick={scrollToBottom}>Contact</NavTextLink>
         </NavEnd>
