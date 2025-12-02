@@ -45,14 +45,8 @@ const Footer = ({ isMobile }) => {
       <Bottom>
         <Section>
           <Span>Anis Khalef</Span>
-          <Span>Sousse, Tunisia</Span>
+          <Span>Susah, Tunisia</Span>
           <Span>Ⓒ 2025</Span>
-        </Section>
-
-        <Section>
-          <Bold>Built with</Bold>
-          <Span>React.js, Three.js,</Span>
-          <Span>Framer Motion</Span>
         </Section>
 
         <Links>
@@ -62,7 +56,7 @@ const Footer = ({ isMobile }) => {
             </Link>
           </Section>
           <Section>
-            <Link href="https://github.com/Anis Khalefwrn">Github</Link>
+            <Link href="https://github.com/anisossss">Github</Link>
           </Section>
         </Links>
       </Bottom>
