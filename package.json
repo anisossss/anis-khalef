@@ -59,7 +59,7 @@
     "resize-observer-polyfill": "^1.5.1"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "overrides": {
     "ajv": "8.13.0",
