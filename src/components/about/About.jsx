@@ -25,28 +25,29 @@ const About = ({ aboutRef, isMobile }) => {
         <SectionContainer>
           <RightContainer>
             <Description>
-              I'm <strong>Anis Khalef</strong>, a{" "}
-              <strong>Software Engineer</strong> who doesn't just code, I{" "}
-              <strong>architect digital revolutions</strong>. As the founder and{" "}
-              <strong>Technical Lead</strong> of <strong>TuniCyberLabs</strong>,
-              I've spent over four years transforming complex ideas into{" "}
-              <strong>world-class software solutions</strong> that scale to
-              millions of users. I'm not just a developer, I'm an{" "}
-              <strong>engineering powerhouse</strong> specializing in{" "}
-              <strong>
-                Software Engineering, Blockchain Technology, and IoT Systems
-              </strong>
-              . My expertise extends beyond coding: I'm a{" "}
-              <strong>Project Manager</strong> and <strong>Team Lead</strong>{" "}
-              who orchestrates entire development lifecycles, from concept to
-              deployment. I engineer{" "}
-              <strong>enterprise-grade applications</strong> using{" "}
-              <strong>React.js, Next.js, Node.js, MongoDB, Three.js</strong>,
-              and cutting-edge <strong>AI/ML integration</strong>. But what sets
-              me apart? I build <strong>blockchain-powered solutions</strong>{" "}
-              and <strong>IoT ecosystems</strong> that connect the physical and
-              digital worlds. Every line of code I write is engineered for{" "}
-              <strong>maximum performance, scalability, and impact</strong>.
+              I am Anis Khalef, a Software Engineer who architects digital
+              revolutions through innovative technology solutions. As the
+              founder and Technical Lead of{" "}
+              <CompanyLink
+                href="https://tunicyberlabs.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                TuniCyberLabs
+              </CompanyLink>
+              , I have spent over 6 years transforming complex ideas into
+              world-class software solutions that scale to millions of users. I
+              am not just a developer, I am an engineering powerhouse
+              specializing in Software Engineering, Blockchain Technology, and
+              IoT Systems. My expertise extends beyond coding: I am a Project
+              Manager and Team Lead who orchestrates entire development
+              lifecycles, from concept to deployment. I engineer
+              enterprise-grade applications using React.js, Next.js, Node.js,
+              MongoDB, Three.js, and cutting-edge AI/ML integration. What sets
+              me apart is my ability to build blockchain-powered solutions and
+              IoT ecosystems that seamlessly connect the physical and digital
+              worlds. Every line of code I write is engineered for maximum
+              performance, scalability, and impact.
             </Description>
             <Skills>
               <Skill>
@@ -79,8 +80,6 @@ const About = ({ aboutRef, isMobile }) => {
                 <SkillItem>Project Management</SkillItem>
                 <SkillItem>Team Leadership</SkillItem>
                 <SkillItem>Agile/Scrum</SkillItem>
-                <SkillItem>Figma</SkillItem>
-                <SkillItem>Blender</SkillItem>
               </Skill>
             </Skills>
           </RightContainer>
@@ -147,6 +146,44 @@ const Description = styled.p`
   font-size: 2.4rem;
   color: ${({ theme }) => theme.portfolio.fontColor.secondary};
   line-height: 150%;
+
+  strong {
+    font-family: ${({ theme }) => theme.main.fontFamily.light};
+    font-size: 2.4rem;
+    font-weight: normal;
+  }
+`;
+
+const CompanyLink = styled.a`
+  font-family: ${({ theme }) => theme.main.fontFamily.light};
+  font-size: 2.4rem;
+  color: ${({ theme }) => theme.portfolio.fontColor.primary};
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.portfolio.fontColor.primary};
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: ${({ theme }) => theme.portfolio.fontColor.primary};
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 `;
 
 const Skills = styled.div`

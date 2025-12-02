@@ -86,7 +86,6 @@ const Experience = ({ experienceRef, isMobile }) => {
         "TypeScript",
         "Redux",
         "Styled Components",
-        "Figma",
         "Jest",
       ],
     },
